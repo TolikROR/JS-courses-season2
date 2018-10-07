@@ -3,11 +3,11 @@ function Car(brand, fuelTank, ownerFullName) {
   this.fuelTank = fuelTank;
   this.ownerFullName = fullName(ownerFullName);
 
-  function fullName(fullName) {
-    ownerFullName = ownerFullName.trim();
-    const arrayForName = ownerFullName.trim().split(' ');
+  function fullName(receivedName) {
+    receivedName = receivedName.trim();
+    const arrayForName = receivedName.split(' ');
 
-    let result = (arrayForName.length == 2) ? ownerFullName : "John Doe";
+    let result = arrayForName.length == 2 ? receivedName : "John Doe";
 
     return result;
   }

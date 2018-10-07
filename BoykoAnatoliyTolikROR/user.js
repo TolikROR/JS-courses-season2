@@ -16,4 +16,3 @@ function User(name, age, profession) {
     return businessCard;
   };
 }
-const user = new User("Tolik", 23, "undefined");
