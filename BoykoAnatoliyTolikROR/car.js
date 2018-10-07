@@ -4,8 +4,7 @@ function Car(brand, fuelTank, ownerFullName) {
   this.ownerFullName = fullName(ownerFullName);
 
   function fullName(receivedName) {
-    receivedName = receivedName.trim();
-    const arrayForName = receivedName.split(' ');
+    const arrayForName = receivedName.trim().split(' ');
 
     let result = arrayForName.length == 2 ? receivedName : "John Doe";
 
